@@ -1,0 +1,104 @@
+{
+  "itemId" : "_9iqNUIhLEeqq5LL4GuDjMQ",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_Y0zVoLjFEeukeNrzToV-uw",
+    "parameterList" : [ {
+      "id" : "_wTS0Cb3hEeu5nvs7CU5wRA",
+      "name" : "TXESSServerConnection_Schema_etlmeta_Database"
+    }, {
+      "id" : "_wTS0D73hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams"
+    }, {
+      "id" : "_wTS0Cr3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Login"
+    }, {
+      "id" : "_wTS0Db3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Password"
+    }, {
+      "id" : "_wTS0Dr3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Port"
+    }, {
+      "id" : "_wTS0C73hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Schema"
+    }, {
+      "id" : "_wTS0DL3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Server"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_Y0zVoLjFEeukeNrzToV-uw",
+    "parameterList" : [ {
+      "id" : "_I1fhOb4TEeu5nvs7CU5wRA",
+      "name" : "TXESSServerConnection_Schema_etlmeta_Database"
+    }, {
+      "id" : "_I1fhP74TEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams"
+    }, {
+      "id" : "_I1fhOr4TEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Login"
+    }, {
+      "id" : "_I1fhPb4TEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Password"
+    }, {
+      "id" : "_I1fhPr4TEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Port"
+    }, {
+      "id" : "_I1fhO74TEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Schema"
+    }, {
+      "id" : "_I1fhPL4TEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Server"
+    } ]
+  }, {
+    "contextName" : "TXESS_PREPROD",
+    "repoId" : "_Y0zVoLjFEeukeNrzToV-uw",
+    "parameterList" : [ {
+      "id" : "_wTS0Ab3hEeu5nvs7CU5wRA",
+      "name" : "TXESSServerConnection_Schema_etlmeta_Database"
+    }, {
+      "id" : "_wTS0B73hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams"
+    }, {
+      "id" : "_wTS0Ar3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Login"
+    }, {
+      "id" : "_wTS0Bb3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Password"
+    }, {
+      "id" : "_wTS0Br3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Port"
+    }, {
+      "id" : "_wTS0A73hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Schema"
+    }, {
+      "id" : "_wTS0BL3hEeu5nvs7CU5wRA",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Server"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_Y0zVoLjFEeukeNrzToV-uw",
+    "parameterList" : [ {
+      "id" : "_wkSOQR0tEe2mmY61fbuUAw",
+      "name" : "TXESSServerConnection_Schema_etlmeta_Database"
+    }, {
+      "id" : "_wkSORx0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams"
+    }, {
+      "id" : "_wkSOQh0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Login"
+    }, {
+      "id" : "_wkSORR0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Password"
+    }, {
+      "id" : "_wkSORh0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Port"
+    }, {
+      "id" : "_wkSOQx0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Schema"
+    }, {
+      "id" : "_wkSORB0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Server"
+    } ]
+  } ]
+}

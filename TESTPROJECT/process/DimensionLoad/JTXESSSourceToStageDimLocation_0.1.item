@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="PreProd" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_bl6LUB03Ee2MIOrlZm2iag" name="ActiveFlag" prompt="ActiveFlag?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Y"/>
+    <contextParameter comment="" internalId="_bl6LUR03Ee2MIOrlZm2iag" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_bl6LUh03Ee2MIOrlZm2iag" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LUx03Ee2MIOrlZm2iag" name="TaskName" prompt="TaskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+    <contextParameter comment="" internalId="_bl6LVB03Ee2MIOrlZm2iag" name="ProcessidMaster" prompt="ProcessidMaster?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LVR03Ee2MIOrlZm2iag" name="SRCTableName" prompt="SRCTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SCORECARD_OFFICE_BUILDING_LKUP"/>
+    <contextParameter comment="" internalId="_bl6LVh03Ee2MIOrlZm2iag" name="SRCSchemaType" prompt="SRCSchemaType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OBINGSCDM"/>
+    <contextParameter comment="" internalId="_bl6LVx03Ee2MIOrlZm2iag" name="SRCSystemName" prompt="SRCSystemName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LWB03Ee2MIOrlZm2iag" name="SRCSystemType" prompt="SRCSystemType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LWR03Ee2MIOrlZm2iag" name="TaskAttribute" prompt="TaskAttribute?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LWh03Ee2MIOrlZm2iag" name="TRGTTableName" prompt="TRGTTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics.StgDimLocation"/>
+    <contextParameter comment="" internalId="_bl6LWx03Ee2MIOrlZm2iag" name="TaskID" prompt="TaskID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LXB03Ee2MIOrlZm2iag" name="SRCRecCnt" prompt="SRCRecCnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LXR03Ee2MIOrlZm2iag" name="InsertCount" prompt="InsertCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LXh03Ee2MIOrlZm2iag" name="UpdateCount" prompt="UpdateCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LXx03Ee2MIOrlZm2iag" name="RejectCount" prompt="RejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LYB03Ee2MIOrlZm2iag" name="Jobname" prompt="Jobname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LYR03Ee2MIOrlZm2iag" name="ErrorDesc" prompt="ErrorDesc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCcCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams" prompt="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaCcSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Database" prompt="NYSOHSqlServerContext_Schema_Analytics_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NYSOH"/>
+    <contextParameter comment="" internalId="_HbaCcidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Login" prompt="NYSOHSqlServerContext_Schema_Analytics_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etluser_nysoh"/>
+    <contextParameter comment="" internalId="_HbaCcydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Password" prompt="NYSOHSqlServerContext_Schema_Analytics_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:ssvK32PRB27YqaQMsWD+wTKjt4cmKxfs1QpfeWBCbvUolREuLd5p3nw9"/>
+    <contextParameter comment="" internalId="_HbaCdCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Port" prompt="NYSOHSqlServerContext_Schema_Analytics_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCdSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Schema" prompt="NYSOHSqlServerContext_Schema_Analytics_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics"/>
+    <contextParameter comment="" internalId="_HbaCdidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Server" prompt="NYSOHSqlServerContext_Schema_Analytics_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeapmmsql02mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCdydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Port" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCeCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaCeSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Schema" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_HbaCeidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Database" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NYSOH"/>
+    <contextParameter comment="" internalId="_HbaCeydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Password" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:3K9FqoTQT6cPSzluUm8ETenFRupI8tdrqJpN+oQYZ3p4Q/w3KhMKSBWj"/>
+    <contextParameter comment="" internalId="_HbaCfCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Server" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeapmmsql02mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCfSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Login" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etluser_nysoh"/>
+    <contextParameter comment="" internalId="_HbaCfidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGSCRO"/>
+    <contextParameter comment="" internalId="_HbaCfydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwp"/>
+    <contextParameter comment="" internalId="_HbaCgCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCgSdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nhx1dorpobiedw.c5gioxysvg4c.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_bl6LYh03Ee2MIOrlZm2iag" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCgidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1557"/>
+    <contextParameter comment="" internalId="_HbaCgydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:/jWlLhewpk9T6yukhk7NOG0bpPHoJLVznWWEQH6EJCdhL1bb15hL"/>
+  </context>
+  <context confirmationNeeded="false" name="PreProd">
+    <contextParameter comment="" internalId="_bl6LYx03Ee2MIOrlZm2iag" name="ActiveFlag" prompt="ActiveFlag?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Y"/>
+    <contextParameter comment="" internalId="_bl6LZB03Ee2MIOrlZm2iag" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_bl6LZR03Ee2MIOrlZm2iag" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LZh03Ee2MIOrlZm2iag" name="TaskName" prompt="TaskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+    <contextParameter comment="" internalId="_bl6LZx03Ee2MIOrlZm2iag" name="ProcessidMaster" prompt="ProcessidMaster?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LaB03Ee2MIOrlZm2iag" name="SRCTableName" prompt="SRCTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SCORECARD_OFFICE_BUILDING_LKUP"/>
+    <contextParameter comment="" internalId="_bl6LaR03Ee2MIOrlZm2iag" name="SRCSchemaType" prompt="SRCSchemaType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OBINGSCDM"/>
+    <contextParameter comment="" internalId="_bl6Lah03Ee2MIOrlZm2iag" name="SRCSystemName" prompt="SRCSystemName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6Lax03Ee2MIOrlZm2iag" name="SRCSystemType" prompt="SRCSystemType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LbB03Ee2MIOrlZm2iag" name="TaskAttribute" prompt="TaskAttribute?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LbR03Ee2MIOrlZm2iag" name="TRGTTableName" prompt="TRGTTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics.StgDimLocation"/>
+    <contextParameter comment="" internalId="_bl6Lbh03Ee2MIOrlZm2iag" name="TaskID" prompt="TaskID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Lbx03Ee2MIOrlZm2iag" name="SRCRecCnt" prompt="SRCRecCnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LcB03Ee2MIOrlZm2iag" name="InsertCount" prompt="InsertCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LcR03Ee2MIOrlZm2iag" name="UpdateCount" prompt="UpdateCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Lch03Ee2MIOrlZm2iag" name="RejectCount" prompt="RejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Lcx03Ee2MIOrlZm2iag" name="Jobname" prompt="Jobname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LdB03Ee2MIOrlZm2iag" name="ErrorDesc" prompt="ErrorDesc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaChCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams" prompt="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaChSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Database" prompt="NYSOHSqlServerContext_Schema_Analytics_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_PREPROD"/>
+    <contextParameter comment="" internalId="_HbaChidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Login" prompt="NYSOHSqlServerContext_Schema_Analytics_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SVC_SQLservice"/>
+    <contextParameter comment="" internalId="_HbaChydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Password" prompt="NYSOHSqlServerContext_Schema_Analytics_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:FP2FFfzK2GruMYNzHp1X1fI7iDx0J0AiYTpYItLkvH6atAI84lDV"/>
+    <contextParameter comment="" internalId="_HbaCiCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Port" prompt="NYSOHSqlServerContext_Schema_Analytics_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCiSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Schema" prompt="NYSOHSqlServerContext_Schema_Analytics_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics"/>
+    <contextParameter comment="" internalId="_HbaCiidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Server" prompt="NYSOHSqlServerContext_Schema_Analytics_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCiydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Port" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCjCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaCjSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Schema" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_HbaCjidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Database" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_PREPROD"/>
+    <contextParameter comment="" internalId="_HbaCjydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Password" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:MlU8bNCfmDDw4tSLIpHS6KIAQ/age68AlzhQKMbvJ9c1O7aG3t+g"/>
+    <contextParameter comment="" internalId="_HbaCkCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Server" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCkSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Login" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SVC_SQLservice"/>
+    <contextParameter comment="" internalId="_HbaCkidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGSCRO"/>
+    <contextParameter comment="" internalId="_HbaCkydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwp"/>
+    <contextParameter comment="" internalId="_HbaClCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaClSdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nhx1dorpobiedw.c5gioxysvg4c.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_bl6LdR03Ee2MIOrlZm2iag" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaClidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1557"/>
+    <contextParameter comment="" internalId="_HbaClydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MngsRoS#20"/>
+  </context>
+  <context confirmationNeeded="false" name="NGS_TEST">
+    <contextParameter comment="" internalId="_bl6Ldh03Ee2MIOrlZm2iag" name="ActiveFlag" prompt="ActiveFlag?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Y"/>
+    <contextParameter comment="" internalId="_bl6Ldx03Ee2MIOrlZm2iag" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_bl6LeB03Ee2MIOrlZm2iag" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LeR03Ee2MIOrlZm2iag" name="TaskName" prompt="TaskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+    <contextParameter comment="" internalId="_bl6Leh03Ee2MIOrlZm2iag" name="ProcessidMaster" prompt="ProcessidMaster?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Lex03Ee2MIOrlZm2iag" name="SRCTableName" prompt="SRCTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SCORECARD_OFFICE_BUILDING_LKUP"/>
+    <contextParameter comment="" internalId="_bl6LfB03Ee2MIOrlZm2iag" name="SRCSchemaType" prompt="SRCSchemaType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OBINGSCDM"/>
+    <contextParameter comment="" internalId="_bl6LfR03Ee2MIOrlZm2iag" name="SRCSystemName" prompt="SRCSystemName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6Lfh03Ee2MIOrlZm2iag" name="SRCSystemType" prompt="SRCSystemType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6Lfx03Ee2MIOrlZm2iag" name="TaskAttribute" prompt="TaskAttribute?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6LgB03Ee2MIOrlZm2iag" name="TRGTTableName" prompt="TRGTTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics.StgDimLocation"/>
+    <contextParameter comment="" internalId="_bl6LgR03Ee2MIOrlZm2iag" name="TaskID" prompt="TaskID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Lgh03Ee2MIOrlZm2iag" name="SRCRecCnt" prompt="SRCRecCnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Lgx03Ee2MIOrlZm2iag" name="InsertCount" prompt="InsertCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LhB03Ee2MIOrlZm2iag" name="UpdateCount" prompt="UpdateCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LhR03Ee2MIOrlZm2iag" name="RejectCount" prompt="RejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Lhh03Ee2MIOrlZm2iag" name="Jobname" prompt="Jobname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6Lhx03Ee2MIOrlZm2iag" name="ErrorDesc" prompt="ErrorDesc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCmCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Port" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCmSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaCmidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Schema" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_HbaCmydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Database" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_TEST"/>
+    <contextParameter comment="" internalId="_HbaCnCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Password" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:xF4qIQtcNWYYNkSOkoNTP8/zMuUqiiG2mEAJyoljnfi+lruxUAHUIoJSv7rzGCs="/>
+    <contextParameter comment="" internalId="_HbaCnSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Server" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCnidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Login" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbaCnydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGSCRO"/>
+    <contextParameter comment="" internalId="_HbaCoCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwu"/>
+    <contextParameter comment="" internalId="_HbaCoSdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCoidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nhx1doruobiedw.cldmgftty3fu.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_bl6LiB03Ee2MIOrlZm2iag" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCoydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1557"/>
+    <contextParameter comment="" internalId="_HbaCpCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:1LwpGNODDKahhZbo/JOaYcH/P2Xpq5uRAhYMfHH7EECosl5fxw=="/>
+    <contextParameter comment="" internalId="_HbaCpSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Database" prompt="NYSOHSqlServerContext_Schema_Analytics_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_TEST"/>
+    <contextParameter comment="" internalId="_HbaCpidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Login" prompt="NYSOHSqlServerContext_Schema_Analytics_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbaCpydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Schema" prompt="NYSOHSqlServerContext_Schema_Analytics_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics"/>
+    <contextParameter comment="" internalId="_HbaCqCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Server" prompt="NYSOHSqlServerContext_Schema_Analytics_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCqSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Password" prompt="NYSOHSqlServerContext_Schema_Analytics_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:I1+z26t7KZLE7/TDAgw7SQVW64sPDr8dTxTNLVJwyZH1lMAUFbywm9JDHc+EAcg="/>
+    <contextParameter comment="" internalId="_HbaCqidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Port" prompt="NYSOHSqlServerContext_Schema_Analytics_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCqydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams" prompt="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+  </context>
+  <context confirmationNeeded="false" name="NYSOH_UAT">
+    <contextParameter comment="" internalId="_bl6LiR03Ee2MIOrlZm2iag" name="ActiveFlag" prompt="ActiveFlag?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Y"/>
+    <contextParameter comment="" internalId="_bl6Lih03Ee2MIOrlZm2iag" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_bl6Lix03Ee2MIOrlZm2iag" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6LjB03Ee2MIOrlZm2iag" name="TaskName" prompt="TaskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+    <contextParameter comment="" internalId="_bl6LjR03Ee2MIOrlZm2iag" name="ProcessidMaster" prompt="ProcessidMaster?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6Ljh03Ee2MIOrlZm2iag" name="SRCTableName" prompt="SRCTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SCORECARD_OFFICE_BUILDING_LKUP"/>
+    <contextParameter comment="" internalId="_bl6Ljx03Ee2MIOrlZm2iag" name="SRCSchemaType" prompt="SRCSchemaType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OBINGSCDM"/>
+    <contextParameter comment="" internalId="_bl6LkB03Ee2MIOrlZm2iag" name="SRCSystemName" prompt="SRCSystemName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yYB03Ee2MIOrlZm2iag" name="SRCSystemType" prompt="SRCSystemType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yYR03Ee2MIOrlZm2iag" name="TaskAttribute" prompt="TaskAttribute?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yYh03Ee2MIOrlZm2iag" name="TRGTTableName" prompt="TRGTTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics.StgDimLocation"/>
+    <contextParameter comment="" internalId="_bl6yYx03Ee2MIOrlZm2iag" name="TaskID" prompt="TaskID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yZB03Ee2MIOrlZm2iag" name="SRCRecCnt" prompt="SRCRecCnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yZR03Ee2MIOrlZm2iag" name="InsertCount" prompt="InsertCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yZh03Ee2MIOrlZm2iag" name="UpdateCount" prompt="UpdateCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yZx03Ee2MIOrlZm2iag" name="RejectCount" prompt="RejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yaB03Ee2MIOrlZm2iag" name="Jobname" prompt="Jobname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yaR03Ee2MIOrlZm2iag" name="ErrorDesc" prompt="ErrorDesc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCrCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Port" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCrSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaCridfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Schema" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_HbaCrydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Database" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NYSOH_UAT"/>
+    <contextParameter comment="" internalId="_HbaCsCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Password" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:3u/Fdc+Gmrr4mBXKNKaFEkRZvgo6MjWtmltG4t6spod6OwWROCqYCqm8PE2dH1Q="/>
+    <contextParameter comment="" internalId="_HbaCsSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Server" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCsidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Login" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbaCsydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGSCRW"/>
+    <contextParameter comment="" internalId="_HbaCtCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwd"/>
+    <contextParameter comment="" internalId="_HbaCtSdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCtidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwddb.cldmgftty3fu.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_bl6yah03Ee2MIOrlZm2iag" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCtydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1557"/>
+    <contextParameter comment="" internalId="_HbaCuCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_HbaCuSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Database" prompt="NYSOHSqlServerContext_Schema_Analytics_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NYSOH_UAT"/>
+    <contextParameter comment="" internalId="_HbaCuidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Login" prompt="NYSOHSqlServerContext_Schema_Analytics_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbaCuydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Schema" prompt="NYSOHSqlServerContext_Schema_Analytics_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics"/>
+    <contextParameter comment="" internalId="_HbaCvCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Server" prompt="NYSOHSqlServerContext_Schema_Analytics_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCvSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Password" prompt="NYSOHSqlServerContext_Schema_Analytics_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:YGGJaVfQzsIvzltJhl5xeDyO2Q/2s2jzlTyJ4LIHZNY6Z6C5TLwH5QrUVclU6Yk="/>
+    <contextParameter comment="" internalId="_HbaCvidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Port" prompt="NYSOHSqlServerContext_Schema_Analytics_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCvydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams" prompt="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+  </context>
+  <context confirmationNeeded="false" name="NYSOH_UAT">
+    <contextParameter comment="" internalId="_bl6yax03Ee2MIOrlZm2iag" name="ActiveFlag" prompt="ActiveFlag?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Y"/>
+    <contextParameter comment="" internalId="_bl6ybB03Ee2MIOrlZm2iag" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_bl6ybR03Ee2MIOrlZm2iag" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ybh03Ee2MIOrlZm2iag" name="TaskName" prompt="TaskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+    <contextParameter comment="" internalId="_bl6ybx03Ee2MIOrlZm2iag" name="ProcessidMaster" prompt="ProcessidMaster?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ycB03Ee2MIOrlZm2iag" name="SRCTableName" prompt="SRCTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SCORECARD_OFFICE_BUILDING_LKUP"/>
+    <contextParameter comment="" internalId="_bl6ycR03Ee2MIOrlZm2iag" name="SRCSchemaType" prompt="SRCSchemaType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OBINGSCDM"/>
+    <contextParameter comment="" internalId="_bl6ych03Ee2MIOrlZm2iag" name="SRCSystemName" prompt="SRCSystemName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6ycx03Ee2MIOrlZm2iag" name="SRCSystemType" prompt="SRCSystemType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6ydB03Ee2MIOrlZm2iag" name="TaskAttribute" prompt="TaskAttribute?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6ydR03Ee2MIOrlZm2iag" name="TRGTTableName" prompt="TRGTTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics.StgDimLocation"/>
+    <contextParameter comment="" internalId="_bl6ydh03Ee2MIOrlZm2iag" name="TaskID" prompt="TaskID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ydx03Ee2MIOrlZm2iag" name="SRCRecCnt" prompt="SRCRecCnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yeB03Ee2MIOrlZm2iag" name="InsertCount" prompt="InsertCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yeR03Ee2MIOrlZm2iag" name="UpdateCount" prompt="UpdateCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yeh03Ee2MIOrlZm2iag" name="RejectCount" prompt="RejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yex03Ee2MIOrlZm2iag" name="Jobname" prompt="Jobname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yfB03Ee2MIOrlZm2iag" name="ErrorDesc" prompt="ErrorDesc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaCwCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams" prompt="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaCwSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Database" prompt="NYSOHSqlServerContext_Schema_Analytics_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NYSOH_UAT"/>
+    <contextParameter comment="" internalId="_HbaCwidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Login" prompt="NYSOHSqlServerContext_Schema_Analytics_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbaCwydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Password" prompt="NYSOHSqlServerContext_Schema_Analytics_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:NXB+hfbtQVUePY88anJJlUCKcgUfmmmHpAPxYeQPjtuWLv+PF6lIYO1O9tLV8jY="/>
+    <contextParameter comment="" internalId="_HbaCxCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Port" prompt="NYSOHSqlServerContext_Schema_Analytics_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCxSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Schema" prompt="NYSOHSqlServerContext_Schema_Analytics_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics"/>
+    <contextParameter comment="" internalId="_HbaCxidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Server" prompt="NYSOHSqlServerContext_Schema_Analytics_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCxydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Port" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaCyCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaCySdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Schema" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_HbaCyidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Database" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NYSOH_UAT"/>
+    <contextParameter comment="" internalId="_HbaCyydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Password" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:97oYWN8Kpm3h7lNKKkuTqInb01IjNIR5/fYDPhWoWxCTJ00Taf+8sDmZJMl/Pec="/>
+    <contextParameter comment="" internalId="_HbaCzCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Server" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCzSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Login" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbaCzidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwddb.cldmgftty3fu.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaCzydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1557"/>
+    <contextParameter comment="" internalId="_HbaC0CdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGSCRW"/>
+    <contextParameter comment="" internalId="_HbaC0SdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value=""/>
+    <contextParameter comment="" internalId="_HbaC0idfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwd"/>
+    <contextParameter comment="" internalId="_bl6yfR03Ee2MIOrlZm2iag" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaC0ydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="NGS_TEST">
+    <contextParameter comment="" internalId="_bl6yfh03Ee2MIOrlZm2iag" name="ActiveFlag" prompt="ActiveFlag?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Y"/>
+    <contextParameter comment="" internalId="_bl6yfx03Ee2MIOrlZm2iag" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_bl6ygB03Ee2MIOrlZm2iag" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ygR03Ee2MIOrlZm2iag" name="TaskName" prompt="TaskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+    <contextParameter comment="" internalId="_bl6ygh03Ee2MIOrlZm2iag" name="ProcessidMaster" prompt="ProcessidMaster?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ygx03Ee2MIOrlZm2iag" name="SRCTableName" prompt="SRCTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SCORECARD_OFFICE_BUILDING_LKUP"/>
+    <contextParameter comment="" internalId="_bl6yhB03Ee2MIOrlZm2iag" name="SRCSchemaType" prompt="SRCSchemaType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OBINGSCDM"/>
+    <contextParameter comment="" internalId="_bl6yhR03Ee2MIOrlZm2iag" name="SRCSystemName" prompt="SRCSystemName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yhh03Ee2MIOrlZm2iag" name="SRCSystemType" prompt="SRCSystemType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yhx03Ee2MIOrlZm2iag" name="TaskAttribute" prompt="TaskAttribute?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yiB03Ee2MIOrlZm2iag" name="TRGTTableName" prompt="TRGTTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics.StgDimLocation"/>
+    <contextParameter comment="" internalId="_bl6yiR03Ee2MIOrlZm2iag" name="TaskID" prompt="TaskID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yih03Ee2MIOrlZm2iag" name="SRCRecCnt" prompt="SRCRecCnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yix03Ee2MIOrlZm2iag" name="InsertCount" prompt="InsertCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yjB03Ee2MIOrlZm2iag" name="UpdateCount" prompt="UpdateCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yjR03Ee2MIOrlZm2iag" name="RejectCount" prompt="RejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yjh03Ee2MIOrlZm2iag" name="Jobname" prompt="Jobname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yjx03Ee2MIOrlZm2iag" name="ErrorDesc" prompt="ErrorDesc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbaC1CdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams" prompt="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaC1SdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Database" prompt="NYSOHSqlServerContext_Schema_Analytics_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_TEST"/>
+    <contextParameter comment="" internalId="_HbaC1idfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Login" prompt="NYSOHSqlServerContext_Schema_Analytics_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbapgCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Password" prompt="NYSOHSqlServerContext_Schema_Analytics_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:NCTTCxjF+G35ElqF8x/9/bGF6D9bmUh9o0qxKgIwkmonviHLseDez+Z6uC3kjg0="/>
+    <contextParameter comment="" internalId="_HbapgSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Port" prompt="NYSOHSqlServerContext_Schema_Analytics_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbapgidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Schema" prompt="NYSOHSqlServerContext_Schema_Analytics_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics"/>
+    <contextParameter comment="" internalId="_HbapgydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Server" prompt="NYSOHSqlServerContext_Schema_Analytics_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbaphCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Port" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaphSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbaphidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Schema" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_HbaphydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Database" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_TEST"/>
+    <contextParameter comment="" internalId="_HbapiCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Password" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:9AbyrnSJK3Q2dkB5TAsdKEfKeAmBka12WILEfpKeUgfX7kMEIC+P0ndmGvWamtI="/>
+    <contextParameter comment="" internalId="_HbapiSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Server" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbapiidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Login" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbapiydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nhx1doruobiedw.cldmgftty3fu.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbapjCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1557"/>
+    <contextParameter comment="" internalId="_HbapjSdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGSCRO"/>
+    <contextParameter comment="" internalId="_HbapjidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:+Dp6rEIYMLgIpgIDcjip0oA0mA9BIJhugOQX0MWPV65ql/G4vw=="/>
+    <contextParameter comment="" internalId="_HbapjydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nyhxodwu"/>
+    <contextParameter comment="" internalId="_bl6ykB03Ee2MIOrlZm2iag" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbapkCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="NGS_PREPROD">
+    <contextParameter comment="" internalId="_bl6ykR03Ee2MIOrlZm2iag" name="ActiveFlag" prompt="ActiveFlag?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Y"/>
+    <contextParameter comment="" internalId="_bl6ykh03Ee2MIOrlZm2iag" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="1"/>
+    <contextParameter comment="" internalId="_bl6ykx03Ee2MIOrlZm2iag" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ylB03Ee2MIOrlZm2iag" name="TaskName" prompt="TaskName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="0"/>
+    <contextParameter comment="" internalId="_bl6ylR03Ee2MIOrlZm2iag" name="ProcessidMaster" prompt="ProcessidMaster?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ylh03Ee2MIOrlZm2iag" name="SRCTableName" prompt="SRCTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SCORECARD_OFFICE_BUILDING_LKUP"/>
+    <contextParameter comment="" internalId="_bl6ylx03Ee2MIOrlZm2iag" name="SRCSchemaType" prompt="SRCSchemaType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="OBINGSCDM"/>
+    <contextParameter comment="" internalId="_bl6ymB03Ee2MIOrlZm2iag" name="SRCSystemName" prompt="SRCSystemName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6ymR03Ee2MIOrlZm2iag" name="SRCSystemType" prompt="SRCSystemType?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6ymh03Ee2MIOrlZm2iag" name="TaskAttribute" prompt="TaskAttribute?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6ymx03Ee2MIOrlZm2iag" name="TRGTTableName" prompt="TRGTTableName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics.StgDimLocation"/>
+    <contextParameter comment="" internalId="_bl6ynB03Ee2MIOrlZm2iag" name="TaskID" prompt="TaskID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ynR03Ee2MIOrlZm2iag" name="SRCRecCnt" prompt="SRCRecCnt?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ynh03Ee2MIOrlZm2iag" name="InsertCount" prompt="InsertCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6ynx03Ee2MIOrlZm2iag" name="UpdateCount" prompt="UpdateCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yoB03Ee2MIOrlZm2iag" name="RejectCount" prompt="RejectCount?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_bl6yoR03Ee2MIOrlZm2iag" name="Jobname" prompt="Jobname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_bl6yoh03Ee2MIOrlZm2iag" name="ErrorDesc" prompt="ErrorDesc?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbapkSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams" prompt="NYSOHSqlServerContext_Schema_Analytics_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_HbapkidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Database" prompt="NYSOHSqlServerContext_Schema_Analytics_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_PREPROD"/>
+    <contextParameter comment="" internalId="_HbapkydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Login" prompt="NYSOHSqlServerContext_Schema_Analytics_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbaplCdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Password" prompt="NYSOHSqlServerContext_Schema_Analytics_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:Hwqgs3/DlwM2JPDoOlCG3buJPxd1z0yM5dcGOgCwApkv/r/u5MrjlYWue7qxpOw="/>
+    <contextParameter comment="" internalId="_HbaplSdfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Port" prompt="NYSOHSqlServerContext_Schema_Analytics_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbaplidfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Schema" prompt="NYSOHSqlServerContext_Schema_Analytics_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="analytics"/>
+    <contextParameter comment="" internalId="_HbaplydfEe2YwtexDZKHeg" name="NYSOHSqlServerContext_Schema_Analytics_Server" prompt="NYSOHSqlServerContext_Schema_Analytics_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbapmCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGSCRO"/>
+    <contextParameter comment="" internalId="_HbapmSdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Service?" promptNeeded="true" repositoryContextId="built-in" type="id_String" value="nyhxodwp"/>
+    <contextParameter comment="" internalId="_HbapmidfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbapmydfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="nhx1dorpobiedw.c5gioxysvg4c.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_bl6yox03Ee2MIOrlZm2iag" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_HbapnCdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1557"/>
+    <contextParameter comment="" internalId="_HbapnSdfEe2YwtexDZKHeg" name="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password" prompt="NYSOHQracleServerConnection_Schema_OBINGSCDM_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:YZQMvS/rmemp5B6C+vCPNAQfuNTRcqOqKvqX+d0hetnKdCIu24jf"/>
+    <contextParameter comment="" internalId="_HbapnidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Database" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_PREPROD"/>
+    <contextParameter comment="" internalId="_HbapnydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Login" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_HbapoCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Schema" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_HbapoSdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Server" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+    <contextParameter comment="" internalId="_HbapoidfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Password" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:XQpNe2jOneGvZPYrhUmz8Vd8lsAJrLq6cashFEtRfSq5lziFQy89+U4Mi2eHuLA="/>
+    <contextParameter comment="" internalId="_HbapoydfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_Port" prompt="NYSOHSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_HbappCdfEe2YwtexDZKHeg" name="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XmujrfnNti6lYfBFPXMd8+EDJmXL7gD7cmArcrgq"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/3.1/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Vj6yzw8cg/TJAuzETOv4SltHaNBvMiwzEGVAvfNh"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_zg_YIHPTEeqQQbaEK2N-RQ" name="DataOperation"/>
+    <routinesParameter id="_zh260HPTEeqQQbaEK2N-RQ" name="Mathematical"/>
+    <routinesParameter id="_zh-PkHPTEeqQQbaEK2N-RQ" name="Numeric"/>
+    <routinesParameter id="_ziEWMHPTEeqQQbaEK2N-RQ" name="Relational"/>
+    <routinesParameter id="_ziLD4HPTEeqQQbaEK2N-RQ" name="StringHandling"/>
+    <routinesParameter id="_ziRxkHPTEeqQQbaEK2N-RQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_ziXRIHPTEeqQQbaEK2N-RQ" name="TalendDate"/>
+    <routinesParameter id="_zidXwHPTEeqQQbaEK2N-RQ" name="TalendString"/>
+    <routinesParameter id="_zii3UHPTEeqQQbaEK2N-RQ" name="TalendStringUtil"/>
+    <routinesParameter id="_NnX3gK6LEeuZpO9UzKoySQ" name="DQTechnical"/>
+    <routinesParameter id="_NiohcK6LEeuZpO9UzKoySQ" name="DataMasking"/>
+    <routinesParameter id="_NmxakK6LEeuZpO9UzKoySQ" name="DataQualityDependencies"/>
+    <routinesParameter id="_Nmg74K6LEeuZpO9UzKoySQ" name="DataQuality"/>
+    <routinesParameter id="_NnB5QK6LEeuZpO9UzKoySQ" name="DqStringHandling"/>
+    <routinesParameter id="_Nn9GUK6LEeuZpO9UzKoySQ" name="SQLike"/>
+  </parameters>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_AYwdkGdwEeuI-f1N1xbIlw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18"/>
+    <elementParameter field="TEXT" name="RAC_URL" show="false" value="&quot;nhx1dorpobiedw.c5gioxysvg4c.us-east-1.rds.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="context.NYSOHQracleServerConnection_Schema_OBINGSCDM_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="ORACLE_SERVICE_NAME"/>
+    <elementParameter field="TEXT" name="PORT" value="context.NYSOHQracleServerConnection_Schema_OBINGSCDM_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.NYSOHQracleServerConnection_Schema_OBINGSCDM_Service"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;nyhxodwp&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="context.NYSOHQracleServerConnection_Schema_OBINGSCDM_Schema"/>
+    <elementParameter field="TEXT" name="USER" value="context.NYSOHQracleServerConnection_Schema_OBINGSCDM_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BdSXSHRJIyaCsR1s/QOp99FWW6nRralMzZBsSUm0HL13VRZ1DNdSZGZ44uZLcYwKiisn2eqW5ZSyhBh9g+15yVMkv2w5uNJ0uXdVHNVBs4B4KG3MRtwpt3c="/>
+    <elementParameter field="TEXT" name="JDBC_URL" show="false" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Select DISTINCT NVL(OFFICE_NAME,'N/A') AS OFFICE,nvl(office_desc,'N/A') AS building from&#13;&#10; \&quot;OBINGSCDM\&quot;.\&quot;WC_DM_EMPLOYEE_D\&quot; &quot;&#13;&#10; &#13;&#10;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.NYSOHQracleServerConnection_Schema_OBINGSCDM_AdditionalParams"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="OFFICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="BUILDING"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="OracleConnection"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="100" name="OFFICE" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="BUILDING" nullable="true" originalLength="-1" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_trX3MI2_Eeq6suz_yveSHw-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out" name="copyOfout">
+      <column comment="" key="false" length="-1" name="EtlTaskID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Office" nullable="false" originalLength="15" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Building" nullable="false" originalLength="100" pattern="" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables name="Var" sizeState="INTERMEDIATE"/>
+      <outputTables name="copyOfout" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="context.TaskID" name="EtlTaskID" type="id_Integer"/>
+        <mapperTableEntries expression="row2.OFFICE " name="Office" type="id_String"/>
+        <mapperTableEntries expression="row2.BUILDING " name="Building" type="id_String"/>
+      </outputTables>
+      <inputTables expressionFilter="EMAIL_ADDRESS" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="OFFICE" nullable="true" type="id_String"/>
+        <mapperTableEntries name="BUILDING" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_rcJzoLi3EeukeNrzToV-uw"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.NYSOHSqlServerContext_Schema_Analytics_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.NYSOHSqlServerContext_Schema_Analytics_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.NYSOHSqlServerContext_Schema_Analytics_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.NYSOHSqlServerContext_Schema_Analytics_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.NYSOHSqlServerContext_Schema_Analytics_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dCyzbM+K3/c+eSDShsc4LXpb6NjOMAUG9JpNoe51XyLZlifpa9JOdQ82tn5mmxrMATrC4kMm29FPbgNPqantnC177ZRPAQOLjlTLHKi+L7QqL3A="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;StgDimLocation&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="NOTE: batch size must be less than or equal to total number of parameter markers divided by number of columns"/>
+    <elementParameter field="CHECK" name="SPECIFY_IDENTITY_FIELD" show="false" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="IDENTITY_FIELD" show="false" value="Office"/>
+    <elementParameter field="TEXT" name="START_VALUE" show="false" value="1"/>
+    <elementParameter field="TEXT" name="STEP" show="false" value="1"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="id_MSSQL"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.NYSOHSqlServerContext_Schema_Analytics_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" show="false" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="100"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EtlTaskID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Office"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Building"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="IGNORE_DATE_OUTOF_RANGE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out" name="tDBOutput_2">
+      <column comment="" key="false" length="-1" name="EtlTaskID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Office" nullable="false" originalLength="15" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Building" nullable="false" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="out" name="REJECT">
+      <column comment="" key="false" length="-1" name="EtlTaskID" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Office" nullable="false" originalLength="15" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Building" nullable="false" originalLength="100" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="480" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_rcJzoLi3EeukeNrzToV-uw"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.NYSOHSqlServerContext_Schema_Analytics_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.NYSOHSqlServerContext_Schema_Analytics_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.NYSOHSqlServerContext_Schema_Analytics_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.NYSOHSqlServerContext_Schema_Analytics_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.NYSOHSqlServerContext_Schema_Analytics_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8fPg8keRtqTvx/y97Llo8kDG9WXGHzrWOd8y9OURRLjjV9m2QzNmPpm6z+CdiLyRosIDeRNKzvogRd1+rowGMRAGLBr7/sGOVcal5l7PsZJ2F+I="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Delete from  analytics.StgDimLocation&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.NYSOHSqlServerContext_Schema_Analytics_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value=""/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="tCreateTask"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="NGS_PREPROD"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="EMP_TEST:_cWFi0IiPEeqq5LL4GuDjMQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ETLPrcsID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ETLPrcsID"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ProcessId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ProcessId"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="SRCTableName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.SRCTableName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="SRCSchemaType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.SRCSchemaType"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="SRCSystemName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.SRCSystemName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="SRCSystemType"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.SRCSystemType"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="TRGTTableName"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.TRGTTableName"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ProcessId"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ProcessId"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="ETLPrcsID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.ETLPrcsID"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1">
+      <column comment="" key="false" length="-1" name="TaskID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="6" offsetLabelY="3" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_2"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;context.TaskID =  row4.TaskID;&#10;System.out.println(context.TaskID);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" show="false" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_2">
+      <column comment="" key="false" length="-1" name="TaskID" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="tEndTask"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="PreProd"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="EMP_TEST:_9N87cIi1Eeqq5LL4GuDjMQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS">
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="SRCRecCnt"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.SRCRecCnt"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="InsertCount"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.InsertCount"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="UpdateCount"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.UpdateCount"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="RejectCount"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.RejectCount"/>
+      <elementValue elementRef="PARAM_NAME_COLUMN" value="TaskID"/>
+      <elementValue elementRef="PARAM_VALUE_COLUMN" value="context.TaskID"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="6" offsetLabelY="3" posX="704" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_3"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;//context.TaskID =  row2.TaskID;&#10;System.out.println(context.TaskID);&#10;&#10;context.SRCRecCnt = ((Integer)globalMap.get(&quot;tDBInput_2_NB_LINE&quot;));&#10;&#10;System.out.println(context.SRCRecCnt);&#10;&#10;//context.JobName =jobName;&#10;context.InsertCount=((Integer)globalMap.get(&quot;tDBOutput_2_NB_LINE&quot;));&#10;System.out.println(context.InsertCount);&#10;&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" show="false" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_3">
+      <column comment="" key="false" length="-1" name="recordSet" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="352" sizeX="64" sizeY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;&#10;      "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;context.ErrorDesc =  StringHandling.CHANGE(row3.message,&quot;'&quot;,&quot;&quot;);&#10;System.out.println(context.ErrorDesc);&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" show="false" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_2"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_TxZGILjFEeukeNrzToV-uw"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.NYSOHSqlServerConnection_Schema_etlmeta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.NYSOHSqlServerConnection_Schema_etlmeta_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.NYSOHSqlServerConnection_Schema_etlmeta_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.NYSOHSqlServerConnection_Schema_etlmeta_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.NYSOHSqlServerConnection_Schema_etlmeta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:fIfrZIaf4wlvnL2e2nPrO+TwGHDpD6OGh9WjwxxMa9OdrrViPYUVkS+r3G3eNaQ6/SjehCt1XM3D57w8iRFM4sxRqEt9st3tUribiLMzWNpDvLEf"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;ETLError&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;update [etlmeta].[ETLTask] &#13;&#10;      set [TaskStatus] = 'Error'&#13;&#10;            ,[ErrorDesc] = ('&quot;+ context.ErrorDesc +&quot;')&#13;&#10;      where [TaskID] = &quot;+ context.TaskID+&quot; &quot;&#13;&#10;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.NYSOHSqlServerConnection_Schema_etlmeta_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" show="false" value="moment"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_2">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" originalLength="-1" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout" lineStyle="0" metaname="copyOfout" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tDBOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EmployeeID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TerminatedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HIRE_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CurrentReportingManagerID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="HireDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceCreatedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SourceUpdatedDate"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Office"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Building"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SortOrder"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ActiveFlag"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EtlTaskID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="copyOfout"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tJavaFlex_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBRow_1" offsetLabelX="0" offsetLabelY="0" source="tDBRow_1" target="tDBInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tJavaFlex_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaFlex_2" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_2" target="tDBRow_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaFlex_3" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_3" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tJavaFlex_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tDBRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0451b3d5-dc9c-4b18-ac75-4577c1ebee43"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>W225TVMtbyTrUcwMj0cSyQi4dKRXeGUds7azfrJV8jL/2FKtPUSwzKgtLRmADS1uKNWu16URoVkH&#13;
+QKyxk5qcLw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5ae0c3c4-d9c4-4d12-8a41-49c80c4c7a3a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0/jaJ6FS6T75kAHtIfx3NERbD0g+0NU+ZQQxtqVG8bvezRwAPzvrLRXQk0w5ETyEDc+eTr4Fboj1&#13;
+1JXhAYdQaQ==</DigestValue></Reference></SignedInfo><SignatureValue>kmzdjNBURgvzGhQK1HWFyaf8dFhzJbnlBklg/fETxBI2wSgw9Lpecn6nZYuNwymYshGEOVxKhcoj&#13;
+NR2u1FF3PCniP0NXG3y44blNM8p7pPCXGCI25yf8NFiy19+sVD4TKVl+H3mLiukoaMQwNpQlp8dB&#13;
+h+zFf7DhNRr687YK7m+I+kvTNGYwMPTCfFeqXd1AySVgipFxiybcLd9UwuEoMIC2o4BEDbZJDecZ&#13;
+9IP0tSilTJS5sgTOe8AH1ggn89cj3CnCRug1MyCDxKuf+7iHqjWyRPo+lIkyCUoHnvBU/myF7hOC&#13;
+RJstxl3G07X5gVBR44mBjsjkFb/7oe/R6nHwgQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5ae0c3c4-d9c4-4d12-8a41-49c80c4c7a3a" Target="#_0451b3d5-dc9c-4b18-ac75-4577c1ebee43"><Timestamp>2023-05-05 09:12:39</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

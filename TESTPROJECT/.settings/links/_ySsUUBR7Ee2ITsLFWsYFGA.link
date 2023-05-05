@@ -1,0 +1,25 @@
+{
+  "itemId" : "_ySsUUBR7Ee2ITsLFWsYFGA",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_9YqjMBR7Ee2ITsLFWsYFGA",
+      "name" : "Secret_AWS"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_9vWM0z1XEe2GksvEOPBXdg",
+      "name" : "Secret_AWS"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_9vWM1z1XEe2GksvEOPBXdg",
+      "name" : "Secret_AWS"
+    } ]
+  } ]
+}

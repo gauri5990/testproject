@@ -1,0 +1,100 @@
+{
+  "itemId" : "_BltCMBJJEe2EXsYzGJKemw",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_VvsPQxJJEe2EXsYzGJKemw",
+      "name" : "Secret"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_PD5vkBOwEe20p6T0x2wr5g",
+    "parameterList" : [ {
+      "id" : "_HQBRrROyEe20p6T0x2wr5g",
+      "name" : "TEXSSAdditionalParams"
+    }, {
+      "id" : "_HQBRqBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSDatabase"
+    }, {
+      "id" : "_HQBRqROyEe20p6T0x2wr5g",
+      "name" : "TEXSSLogin"
+    }, {
+      "id" : "_HQBRqxOyEe20p6T0x2wr5g",
+      "name" : "TEXSSPassword"
+    }, {
+      "id" : "_HQBRrBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSPort"
+    }, {
+      "id" : "_8rbcEROyEe20p6T0x2wr5g",
+      "name" : "TEXSSSchema"
+    }, {
+      "id" : "_HQBRqhOyEe20p6T0x2wr5g",
+      "name" : "TEXSSServer"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_PD5vkBOwEe20p6T0x2wr5g",
+    "parameterList" : [ {
+      "id" : "_HQBRphOyEe20p6T0x2wr5g",
+      "name" : "TEXSSAdditionalParams"
+    }, {
+      "id" : "_HQBRoROyEe20p6T0x2wr5g",
+      "name" : "TEXSSDatabase"
+    }, {
+      "id" : "_HQBRohOyEe20p6T0x2wr5g",
+      "name" : "TEXSSLogin"
+    }, {
+      "id" : "_HQBRpBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSPassword"
+    }, {
+      "id" : "_HQBRpROyEe20p6T0x2wr5g",
+      "name" : "TEXSSPort"
+    }, {
+      "id" : "_8rbcEBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSSchema"
+    }, {
+      "id" : "_HQBRoxOyEe20p6T0x2wr5g",
+      "name" : "TEXSSServer"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_9vWM0T1XEe2GksvEOPBXdg",
+      "name" : "Secret"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_PD5vkBOwEe20p6T0x2wr5g",
+    "parameterList" : [ {
+      "id" : "_HQBRphOyEe20p6T0x2wr5g",
+      "name" : "TEXSSAdditionalParams"
+    }, {
+      "id" : "_HQBRoROyEe20p6T0x2wr5g",
+      "name" : "TEXSSDatabase"
+    }, {
+      "id" : "_HQBRohOyEe20p6T0x2wr5g",
+      "name" : "TEXSSLogin"
+    }, {
+      "id" : "_HQBRpBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSPassword"
+    }, {
+      "id" : "_HQBRpROyEe20p6T0x2wr5g",
+      "name" : "TEXSSPort"
+    }, {
+      "id" : "_8rbcEBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSSchema"
+    }, {
+      "id" : "_HQBRoxOyEe20p6T0x2wr5g",
+      "name" : "TEXSSServer"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_9vWM1T1XEe2GksvEOPBXdg",
+      "name" : "Secret"
+    } ]
+  } ]
+}

@@ -1,0 +1,29 @@
+{
+  "itemId" : "_7lbs4B1AEe2ZrNK61-hiUQ",
+  "contextList" : [ {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_33Nz4B0uEe2mmY61fbuUAw",
+    "parameterList" : [ {
+      "id" : "_wkSOQR0tEe2mmY61fbuUAw",
+      "name" : "TXESSServerConnection_Schema_Dbo_Database"
+    }, {
+      "id" : "_wkSOQh0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_Dbo_Login"
+    }, {
+      "id" : "_wkSOQx0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_Dbo_Schema"
+    }, {
+      "id" : "_wkSORB0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_Dbo_Server"
+    }, {
+      "id" : "_wkSORR0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_Dbo_Password"
+    }, {
+      "id" : "_wkSORh0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_Dbo_Port"
+    }, {
+      "id" : "_wkSORx0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_Dbo_AdditionalParams"
+    } ]
+  } ]
+}

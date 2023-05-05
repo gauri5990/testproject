@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin">
+  <deletedFolders>process/DimensionLoad</deletedFolders>
+  <deletedFolders>process/ETLFramework</deletedFolders>
+  <deletedFolders>process/ETLFramework/CredentialManagements</deletedFolders>
+  <deletedFolders>process/ETLFramework/ErrorLoggingComponents</deletedFolders>
+  <deletedFolders>process/FactLoad</deletedFolders>
+  <deletedFolders>process/STAGE</deletedFolders>
+  <deletedFolders>process/Stg_to_Target</deletedFolders>
+  <deletedItems id="_2hSIsLVjEeqgTJXDPbV-cg" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_8-BqIK72Eeq3kM2xIdlDAQ" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_FaOvMLU-EeqgTJXDPbV-cg" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_IgYYkOLNEeuDT5FCLehTKg" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_J2pA4D_sEe2NmcZcVFMzNA" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_JYkogEh2Ee2a38n_nxdcAA" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_PTw_kI2_Eeq6suz_yveSHw" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_XthXUD1eEe2oO8JUAAqmKA" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_YlDJALVkEeqgTJXDPbV-cg" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_f0-FwLZIEeqgJO3Y-3cPIA" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_kpxGoLU5EeqgTJXDPbV-cg" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_t4hxIJAqEeq6suz_yveSHw" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_trX3MI2_Eeq6suz_yveSHw" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_uYsJsK78EeqeAJ2g57GCyQ" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_wBMDcK76Eeq3kM2xIdlDAQ" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_zG0uwLY5EeqgJO3Y-3cPIA" path="DimensionLoad" type="PROCESS"/>
+  <deletedItems id="_BltCMBJJEe2EXsYzGJKemw" path="ETLFramework/CredentialManagements" type="PROCESS"/>
+  <deletedItems id="_iVqz4BLvEe2waoVqHHeQjg" path="ETLFramework/CredentialManagements" type="PROCESS"/>
+  <deletedItems id="_ySsUUBR7Ee2ITsLFWsYFGA" path="ETLFramework/CredentialManagements" type="PROCESS"/>
+  <deletedItems id="_6p_c8Cj0Ee2llqbMp-eEIA" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_9N87cIi1Eeqq5LL4GuDjMQ" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_9iqNUIhLEeqq5LL4GuDjMQ" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_Hi_GgIi_Eeq6suz_yveSHw" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_LVTccKfKEeqZI4Ch4x5fjg" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_cWFi0IiPEeqq5LL4GuDjMQ" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_uUcTwK64Eeqt55eORmZ4Lg" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_xYgtQK6uEeqt55eORmZ4Lg" path="ETLFramework/ErrorLoggingComponents" type="PROCESS"/>
+  <deletedItems id="_6zsK4JYbEeqtHPP4yEyTxQ" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_AxN6QCHsEe27SKr3e6UoXg" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_P5g_QPcuEeq0_57Rv3VUgw" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_P5g_QvcuEeq0_57Rv3VUgw" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_W37rwD1hEe2GksvEOPBXdg" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_h5qQUP6UEeqhMYtdzav4cA" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_mbf-oJz-EeqtHPP4yEyTxQ" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_pKx90Do8Ee2QtpnRKG5W1A" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_qSaRsP6ZEeqhMYtdzav4cA" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_rojZAD_oEe25VYcamv4H6Q" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_znHikDgHEe2o5KpTIr6Flg" path="FactLoad" type="PROCESS"/>
+  <deletedItems id="_Ly8EMBiJEe2yBcke8QdfSw" path="STAGE" type="PROCESS"/>
+  <deletedItems id="_7-8BIK71Eeq3kM2xIdlDAQ" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_8MIkUNL_Eeqfs7ThJ5V3kw" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_Ed65cD1fEe2oO8JUAAqmKA" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_G8oAUA_mEeumi_kbWEtrbA" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_JPuJEDgQEe2BYfN3noPzMA" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_KQtl4LVSEeqgTJXDPbV-cg" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_NtS-QOJdEeuDT5FCLehTKg" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_OcOtwLZHEeqgJO3Y-3cPIA" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_ZIvQEKtMEequY7O-bgapxA" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_eStfgMa0EeqVAOn2cF6ysw" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_ksYksLVYEeqgTJXDPbV-cg" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_op6HoIkNEeq6suz_yveSHw" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_yn4NYEjBEe2EXK-8POc8fw" path="Stg_to_Target" type="PROCESS"/>
+  <deletedItems id="_zEe_gDgbEe2BYfN3noPzMA" path="Stg_to_Target" type="PROCESS"/>
+</recyclebin:RecycleBin>

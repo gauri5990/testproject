@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="PreProd" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_-S2zMBR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zMRR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zMhR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zMxR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNBR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOE8D1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="TXESS"/>
+    <contextParameter comment="" internalId="_RLOE8T1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOE8j1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="Digital-Prod"/>
+    <contextParameter comment="" internalId="_RLOE8z1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:27gm8M1hE6h0mmKvZTaJqeDBioKN9tdm0jbRRhWbk909MMZyzOt/yGAXTYY0NPa4"/>
+    <contextParameter comment="" internalId="_RLOE9D1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOE9T1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOE9j1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeapmmsql02mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <context confirmationNeeded="false" name="PreProd">
+    <contextParameter comment="" internalId="_-S2zNRR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNhR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNxR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zOBR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zORR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOE9z1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="TXESS_DEV"/>
+    <contextParameter comment="" internalId="_RLOE-D1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOE-T1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_RLOE-j1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:5dYV0r8Gim1nQA+sq8BqtZlIWgWDpn92N4fJN4KZDmjMk1Dx/R7kqtgeH21/s4I="/>
+    <contextParameter comment="" internalId="_RLOE-z1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOE_D1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOE_T1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <context confirmationNeeded="false" name="NGS_TEST">
+    <contextParameter comment="" internalId="_-S2zOhR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zOxR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zPBR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zPRR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zPhR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOE_j1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="TXESS_DEV"/>
+    <contextParameter comment="" internalId="_RLOE_z1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOFAD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_RLOFAT1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:Spmx2F3wqn/d496/IUr4virPCPIkZZ2/kyRyLqzP9IsG5TxhJlFYof7A0gkuG3Y="/>
+    <contextParameter comment="" internalId="_RLOFAj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOFAz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOFBD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <context confirmationNeeded="false" name="NYSOH_UAT">
+    <contextParameter comment="" internalId="_-S2zPxR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zQBR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zQRR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zQhR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zQxR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOFBT1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="TXESS_DEV"/>
+    <contextParameter comment="" internalId="_RLOFBj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOFBz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_RLOFCD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:bUB1BzfJNnoTbP2i7qXSXDMOsHWH0+cOyUdkxX9yRp96B0dgDJ4YzEkKYmIEdOw="/>
+    <contextParameter comment="" internalId="_RLOFCT1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOFCj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOFCz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <context confirmationNeeded="false" name="NGS_PREPROD">
+    <contextParameter comment="" internalId="_-S2zRBR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zRRR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zRhR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zRxR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zSBR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOFDD1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="TXESS_DEV"/>
+    <contextParameter comment="" internalId="_RLOFDT1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOFDj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_RLOFDz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:WFz1IDtE4vDUhPBQkBjyz3xotjJ3JCuV5fj9QhW63PmURg1u7Vz3YRa4Y+a2cJY="/>
+    <contextParameter comment="" internalId="_RLOFED1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOFET1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOFEj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <context confirmationNeeded="false" name="TXESS_UAT">
+    <contextParameter comment="" internalId="_-S2zNRR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNhR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNxR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zOBR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zORR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOFEz1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="TXESS_DEV"/>
+    <contextParameter comment="" internalId="_RLOFFD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOFFT1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_RLOFFj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:Tv2x7X1h/wD2rRqG9JWUvApDCqsU2hPc0gZnab6II/+PUXyfudhwgnJrR6o1v5A="/>
+    <contextParameter comment="" internalId="_RLOFFz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOFGD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOFGT1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <context confirmationNeeded="false" name="TXESS_PREPROD">
+    <contextParameter comment="" internalId="_-S2zNRR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNhR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNxR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zOBR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zORR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOFGj1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="NGS_PREPROD"/>
+    <contextParameter comment="" internalId="_RLOFGz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOFHD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_RLOFHT1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:hvAeuri9NJj8mU07nt6uTGL7Qy9qVIkc3NVFx9yC33Kvf2mnu6z1duWy6c4pXhw="/>
+    <contextParameter comment="" internalId="_RLOFHj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOFHz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOFID1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <context confirmationNeeded="false" name="TXESS_DEV">
+    <contextParameter comment="" internalId="_-S2zNRR-Ee27toNL03f_HA" name="ProcessId" prompt="ProcessId?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNhR-Ee27toNL03f_HA" name="ETLPrcsID" prompt="ETLPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zNxR-Ee27toNL03f_HA" name="JobName" prompt="JobName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value=""/>
+    <contextParameter comment="" internalId="_-S2zOBR-Ee27toNL03f_HA" name="ETLMasterPrcsID" prompt="ETLMasterPrcsID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="0"/>
+    <contextParameter comment="" internalId="_-S2zORR-Ee27toNL03f_HA" name="ETLMasterPrcsName" prompt="ETLMasterPrcsName?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;JNYSOHCallCentre&quot;"/>
+    <contextParameter comment="" internalId="_RLOFIT1_Ee2ZmKYZt9FNJg" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="TXESS_DEV"/>
+    <contextParameter comment="" internalId="_RLOFIj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true"/>
+    <contextParameter comment="" internalId="_RLOsAD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="digital_dev"/>
+    <contextParameter comment="" internalId="_RLOsAT1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_Password" value="enc:system.encryption.key.v1:lqj6k19cVNPVLF0tb5RJNLETcygWphIC8AJxLetNM0VKollH7ScbGKOCDrJtTiE="/>
+    <contextParameter comment="" internalId="_RLOsAj1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="1433"/>
+    <contextParameter comment="" internalId="_RLOsAz1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="etlmeta"/>
+    <contextParameter comment="" internalId="_RLOsBD1_Ee2ZmKYZt9FNJg" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="_Y0zVoLjFEeukeNrzToV-uw" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:VZPLta/5VYygy/XxxIZLcebJNjZRgNsUcrMtBHQQ"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/3.1/Talend-Studio-20200219_1130-V7.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:GTR+PZnsZZozVLmChI1j/x5m7Xujv/g+WCX6ZYa/"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_huDXgDYFEeqLg-QLiZMoxA" name="DataOperation"/>
+    <routinesParameter id="_huWSdjYFEeqLg-QLiZMoxA" name="Mathematical"/>
+    <routinesParameter id="_hugDcDYFEeqLg-QLiZMoxA" name="Numeric"/>
+    <routinesParameter id="_hugDejYFEeqLg-QLiZMoxA" name="Relational"/>
+    <routinesParameter id="_hugDhDYFEeqLg-QLiZMoxA" name="StringHandling"/>
+    <routinesParameter id="_hugDjjYFEeqLg-QLiZMoxA" name="TalendDataGenerator"/>
+    <routinesParameter id="_hugDmDYFEeqLg-QLiZMoxA" name="TalendDate"/>
+    <routinesParameter id="_hupNajYFEeqLg-QLiZMoxA" name="TalendStringUtil"/>
+    <routinesParameter id="_hupNYDYFEeqLg-QLiZMoxA" name="TalendString"/>
+    <routinesParameter id="_SP4V8BJIEe2EXsYzGJKemw" name="DQTechnical"/>
+    <routinesParameter id="_SPkz8BJIEe2EXsYzGJKemw" name="DataQualityDependencies"/>
+    <routinesParameter id="_SPsIsBJIEe2EXsYzGJKemw" name="DqStringHandling"/>
+    <routinesParameter id="_SPcREBJIEe2EXsYzGJKemw" name="DataQuality"/>
+    <routinesParameter id="_SPVjYBJIEe2EXsYzGJKemw" name="DataMasking"/>
+    <routinesParameter id="_SME0ABJIEe2EXsYzGJKemw" name="SQLike"/>
+  </parameters>
+  <node componentName="tMSSqlRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_k_ciAB1BEe2ZrNK61-hiUQ"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.TXESSSqlServerConnection_Schema_etlmeta_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.TXESSSqlServerConnection_Schema_etlmeta_Port"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="context.TXESSSqlServerConnection_Schema_etlmeta_Schema"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.TXESSServerConnection_Schema_etlmeta_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MSSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.TXESSSqlServerConnection_Schema_etlmeta_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:68R2uDD+VTnA2TyCFRIZK/dlNFehhsHHdB/qbl9iuVyvzJxM5IWgZTd8S46GcFXH+d/wgFzubgdvwPakdYhK2lI7nXSq5r+rBzdq9SfxD1I4n6bV"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_gAjEMHwfEeqLKdzOi5vYAw - DimEmployee"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="IDENTITY_INSERT" value="false"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#13;&#10;UPDATE [etlmeta].[ETLMasterProcess]&#13;&#10;   SET [EndDate] = GETDATE()&#13;&#10;      ,[Status] = 'Completed'&#13;&#10;      ,[ErrorDesc] = NULL&#13;&#10;      ,[ProcessId] = ?&#13;&#10;      ,[JobName] = ?&#13;&#10; WHERE ETLMasterPrcsID =?&#13;&#10;;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams"/>
+    <elementParameter field="CHECK" name="ACTIVE_DIR_AUTH" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="true"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="ETLDescription"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="true"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS">
+      <elementValue elementRef="PARAMETER_INDEX" value="1"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.ProcessId"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="2"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="String"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.ETLMasterPrcsName"/>
+      <elementValue elementRef="PARAMETER_INDEX" value="3"/>
+      <elementValue elementRef="PARAMETER_TYPE" value="Int"/>
+      <elementValue elementRef="PARAMETER_VALUE" value="context.ETLMasterPrcsID"/>
+    </elementParameter>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="UpdateMasterProcess"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBRow_1">
+      <column comment="" key="false" length="-1" name="ETLDescription" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Object" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="ETLDescription" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBRow_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_493953a8-2aaa-4f27-b1db-026fc5cbe822"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>UldjKjfvBp1a6OIZVCtSqgkusIvjbJkHbzxV0sYW+4JbVXMnbuSP+tTsBq8lNE9mgQP9VJHX3ZvZ&#13;
+824h0MJuOA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_143246c5-e6bd-40af-bd71-bf40dfb9e89c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/aqTM1omi65kWoOu4MSmN3Kl5ZEEkFluOKVBOhunGTYm5Tl2ypKP4jnHOkQ0Voyj8RvKbRmEuhAE&#13;
+BxzWfi4HGw==</DigestValue></Reference></SignedInfo><SignatureValue>KFoBk9GG0RS5anHzyfrrFhnyjnHKNxomJT8TTzD4hUgMFljYvrs9vD2+vaESV0kI4OqtplLS7sU+&#13;
+zseNkgRppoDI5zNViW0bl9zw6z0AwyjuHVj/1M2eT8i/z01QkVP9ZnSSoRlzC6f9HmYNnMVR2oCe&#13;
+aYAt3xSsAZUS/ExiQpJXv/zQhTbE0DW5DqxmHXDGdjGU8RgmGM6hoXV6a0mkIyDqJcWObMM/zkW0&#13;
+5l6uMu2vYbG5avtAvoHGa+xdVpMAOLmg1HDbEqcQn++lm7lmST1QJjNoSO41Q84DzT+BB/zfgKFK&#13;
+mopo/7Bw1+ZEB7mXvuuf9+amCjtYdCLV+utfiA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_143246c5-e6bd-40af-bd71-bf40dfb9e89c" Target="#_493953a8-2aaa-4f27-b1db-026fc5cbe822"><Timestamp>2023-05-05 09:12:41</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

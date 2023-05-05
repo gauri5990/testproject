@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="context.TXESSSqlServerConnection_Schema_Dbo_AdditionalParams" ContextId="_33Nz4B0uEe2mmY61fbuUAw" ContextMode="true" DBRootPath="" DatabaseType="Microsoft SQL Server" DatasourceName="" DbmsId="id_MSSQL" DriverClass="net.sourceforge.jtds.jdbc.Driver" DriverJarPath="" FileFieldName="" NullChar="" Password="context.TXESSSqlServerConnection_Schema_Dbo_Password" Port="context.TXESSSqlServerConnection_Schema_Dbo_Port" ProductId="SQL_SERVER" SID="context.TXESSServerConnection_Schema_Dbo_Database" SQLMode="false" ServerName="context.TXESSSqlServerConnection_Schema_Dbo_Server" SqlSynthax="" StandardSQL="true" StringQuote="" URL="jdbc:jtds:sqlserver://uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com:1433/TXESS_DEV;allowMultiQueries=true" UiSchema="context.TXESSSqlServerConnection_Schema_Dbo_Schema" Username="context.TXESSSqlServerConnection_Schema_Dbo_Login" contextName="TXESS_DEV" dataPackage="_YfwuMB1BEe2ZrNK61-hiUQ" dbVersionString="JTDS" id="_7lbs4B1AEe2ZrNK61-hiUQ" label="TXESSSqlServerConnection_Schema_Dbo" name="TXESSSqlServerConnection_Schema_Dbo" supportNLS="false" xmi:id="_7m9W4B1AEe2ZrNK61-hiUQ">
+    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_eap-Ibi1EeukeNrzToV-uw"/>
+    <taggedValue tag="package filter" value="" xmi:id="_ecnF8Li1EeukeNrzToV-uw"/>
+    <taggedValue tag="Status" value="" xmi:id="_eeCCQLi1EeukeNrzToV-uw"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_eeCCQbi1EeukeNrzToV-uw"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_eeCCQri1EeukeNrzToV-uw"/>
+    <taggedValue tag="Description" value="" xmi:id="_eeCCQ7i1EeukeNrzToV-uw"/>
+    <taggedValue tag="Author" value="" xmi:id="_eeCCRLi1EeukeNrzToV-uw"/>
+    <taggedValue tag="otherParameter" xmi:id="_eeCCRbi1EeukeNrzToV-uw"/>
+    <taggedValue tag="DB ProductName" value="Microsoft SQL Server" xmi:id="_KBXCYLi4EeukeNrzToV-uw"/>
+    <taggedValue tag="DB ProductVersion" value="14.00.3294" xmi:id="_KBXCYbi4EeukeNrzToV-uw"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="_KBYQgLi4EeukeNrzToV-uw"/>
+    <parameters key="CONN_PARA_KEY_USERNAME" value="context.TXESSSqlServerConnection_Schema_etlmeta_Login" xmi:id="_eap-Iri1EeukeNrzToV-uw"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_7m9W4B1AEe2ZrNK61-hiUQ" name="TXESS_DEV" xmi:id="_YfwuMB1BEe2ZrNK61-hiUQ">
+    <ownedElement name="dbo" xmi:id="_YfwuMR1BEe2ZrNK61-hiUQ" xsi:type="orgomg.cwm.resource.relational:Schema"/>
+  </orgomg.cwm.resource.relational:Catalog>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_8060e0b7-cd93-4d78-a281-81397064aa7e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>77gmXYYXsaZdb7wb9Sqm9B6kAxBqyVNd48gB3+pvwo/AJ0/Ao+p0f0q9EeB2ig4GgtKwhifl8MIx&#13;
+178noXN4iA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_45381a0b-5281-4640-b68f-69e10fd54faa"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>nINMbRZRKv2cSpyE4V3OknCJ2ugNCvBbEP/s13sEpj2CtK20byLoJSRle/zD36ZHqzGRoNfPifaf&#13;
+12tfUOam0g==</DigestValue></Reference></SignedInfo><SignatureValue>SY8rQMkblH8SEwbD/CilftitVeV+EEXKLIPTg4k0tomoqIfzAQbxD5CdcfMwUM5SU0WR6U0FG/83&#13;
+M64xMSRYCBTsniKp0+75KaRXNN7liECm0L1vp6u3jbPk/cALhjSxB9j0xhYtlkGTotOFi0uGnILk&#13;
+xISus5tyWqD1bBnhENTOZhnwSvG28wL9ZjO/CapPAdkDaZYkVeCwhNfnK2FKke9gIvQHsT//LEJ6&#13;
+PSkQu/ylY6yXr2oGGx8O4t2A9BF6cuGzGpm3zNYCM7/pDtmVkhUjfq6BoeEuJ59Q70j52bzwWfr/&#13;
+dntnKylu/9fC6V51gFHZSEdjr9gsmbRs/tsqCg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_45381a0b-5281-4640-b68f-69e10fd54faa" Target="#_8060e0b7-cd93-4d78-a281-81397064aa7e"><Timestamp>2023-05-05 06:56:52</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

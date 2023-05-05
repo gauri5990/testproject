@@ -1,0 +1,52 @@
+{
+  "itemId" : "_QEIj8BL0Ee2waoVqHHeQjg",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_J2FGQBL0Ee2waoVqHHeQjg",
+    "parameterList" : [ {
+      "id" : "_J2fV8RL0Ee2waoVqHHeQjg",
+      "name" : "Host"
+    }, {
+      "id" : "_J2fV8xL0Ee2waoVqHHeQjg",
+      "name" : "SftpPassword"
+    }, {
+      "id" : "_J2fV9BL0Ee2waoVqHHeQjg",
+      "name" : "SftpPort"
+    }, {
+      "id" : "_J2fV8hL0Ee2waoVqHHeQjg",
+      "name" : "Username"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_J2FGQBL0Ee2waoVqHHeQjg",
+    "parameterList" : [ {
+      "id" : "_wj8igT1XEe2GksvEOPBXdg",
+      "name" : "Host"
+    }, {
+      "id" : "_wj8igj1XEe2GksvEOPBXdg",
+      "name" : "Username"
+    }, {
+      "id" : "_wj8igz1XEe2GksvEOPBXdg",
+      "name" : "SftpPassword"
+    }, {
+      "id" : "_wj8ihD1XEe2GksvEOPBXdg",
+      "name" : "SftpPort"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_J2FGQBL0Ee2waoVqHHeQjg",
+    "parameterList" : [ {
+      "id" : "_wj8ihj1XEe2GksvEOPBXdg",
+      "name" : "Host"
+    }, {
+      "id" : "_wj8ihz1XEe2GksvEOPBXdg",
+      "name" : "Username"
+    }, {
+      "id" : "_wj8iiD1XEe2GksvEOPBXdg",
+      "name" : "SftpPassword"
+    }, {
+      "id" : "_wj8iiT1XEe2GksvEOPBXdg",
+      "name" : "SftpPort"
+    } ]
+  } ]
+}

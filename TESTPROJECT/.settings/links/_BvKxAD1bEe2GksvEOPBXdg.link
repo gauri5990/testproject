@@ -1,0 +1,82 @@
+{
+  "itemId" : "_BvKxAD1bEe2GksvEOPBXdg",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_VVr64BiLEe2yBcke8QdfSw",
+    "parameterList" : [ {
+      "id" : "_VYORgBiLEe2yBcke8QdfSw",
+      "name" : "LocalDirectory"
+    }, {
+      "id" : "_VYORgRiLEe2yBcke8QdfSw",
+      "name" : "RemoteDirectory"
+    } ]
+  }, {
+    "contextName" : "Production",
+    "repoId" : "_J2FGQBL0Ee2waoVqHHeQjg",
+    "parameterList" : [ {
+      "id" : "_J2fV8RL0Ee2waoVqHHeQjg",
+      "name" : "Host"
+    }, {
+      "id" : "_J2fV8xL0Ee2waoVqHHeQjg",
+      "name" : "SftpPassword"
+    }, {
+      "id" : "_J2fV9BL0Ee2waoVqHHeQjg",
+      "name" : "SftpPort"
+    }, {
+      "id" : "_J2fV8hL0Ee2waoVqHHeQjg",
+      "name" : "Username"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_VVr64BiLEe2yBcke8QdfSw",
+    "parameterList" : [ {
+      "id" : "_VxtPET1XEe2GksvEOPBXdg",
+      "name" : "LocalDirectory"
+    }, {
+      "id" : "_VxtPEj1XEe2GksvEOPBXdg",
+      "name" : "RemoteDirectory"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_J2FGQBL0Ee2waoVqHHeQjg",
+    "parameterList" : [ {
+      "id" : "_wj8igT1XEe2GksvEOPBXdg",
+      "name" : "Host"
+    }, {
+      "id" : "_wj8igz1XEe2GksvEOPBXdg",
+      "name" : "SftpPassword"
+    }, {
+      "id" : "_wj8ihD1XEe2GksvEOPBXdg",
+      "name" : "SftpPort"
+    }, {
+      "id" : "_wj8igj1XEe2GksvEOPBXdg",
+      "name" : "Username"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_VVr64BiLEe2yBcke8QdfSw",
+    "parameterList" : [ {
+      "id" : "_VxtPFD1XEe2GksvEOPBXdg",
+      "name" : "LocalDirectory"
+    }, {
+      "id" : "_VxtPFT1XEe2GksvEOPBXdg",
+      "name" : "RemoteDirectory"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_J2FGQBL0Ee2waoVqHHeQjg",
+    "parameterList" : [ {
+      "id" : "_wj8ihj1XEe2GksvEOPBXdg",
+      "name" : "Host"
+    }, {
+      "id" : "_wj8iiD1XEe2GksvEOPBXdg",
+      "name" : "SftpPassword"
+    }, {
+      "id" : "_wj8iiT1XEe2GksvEOPBXdg",
+      "name" : "SftpPort"
+    }, {
+      "id" : "_wj8ihz1XEe2GksvEOPBXdg",
+      "name" : "Username"
+    } ]
+  } ]
+}

@@ -1,0 +1,29 @@
+{
+  "itemId" : "_pMMEAEpLEe2twf-_3rK_HA",
+  "contextList" : [ {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_Y0zVoLjFEeukeNrzToV-uw",
+    "parameterList" : [ {
+      "id" : "_wkSOQR0tEe2mmY61fbuUAw",
+      "name" : "TXESSServerConnection_Schema_etlmeta_Database"
+    }, {
+      "id" : "_wkSOQh0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Login"
+    }, {
+      "id" : "_wkSOQx0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Schema"
+    }, {
+      "id" : "_wkSORB0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Server"
+    }, {
+      "id" : "_wkSORR0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Password"
+    }, {
+      "id" : "_wkSORh0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_Port"
+    }, {
+      "id" : "_wkSORx0tEe2mmY61fbuUAw",
+      "name" : "TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams"
+    } ]
+  } ]
+}

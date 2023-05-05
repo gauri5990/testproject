@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="TXESS_PREPROD" xmi:id="_wTS0AL3hEeu5nvs7CU5wRA">
+    <contextParameter comment="" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NGS_PREPROD" xmi:id="_wTS0Ab3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev" xmi:id="_wTS0Ar3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta" xmi:id="_wTS0A73hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com" xmi:id="_wTS0BL3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:CSyxocCRM2uCptscMp94k1GMFqSiAlRyDBc1nhgJwrGj+q9UwpFGR2r0VYZaJiM=" xmi:id="_wTS0Bb3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_wTS0Br3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true" xmi:id="_wTS0B73hEeu5nvs7CU5wRA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TXESS_DEV" xmi:id="_wkSOQB0tEe2mmY61fbuUAw">
+    <contextParameter comment="" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TXESS_DEV" xmi:id="_wkSOQR0tEe2mmY61fbuUAw"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev" xmi:id="_wkSOQh0tEe2mmY61fbuUAw"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta" xmi:id="_wkSOQx0tEe2mmY61fbuUAw"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.c3ywakkpm0b8.us-east-1.rds.amazonaws.com" xmi:id="_wkSORB0tEe2mmY61fbuUAw"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:EFRvnI+m3i708VxPX1dEngdNokfeSpVIAltCJMNPp3gTob6vwho24MWVesD0rLY=" xmi:id="_wkSORR0tEe2mmY61fbuUAw"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_wkSORh0tEe2mmY61fbuUAw"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true" xmi:id="_wkSORx0tEe2mmY61fbuUAw"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="TXESS_UAT" xmi:id="_I1fhOL4TEeu5nvs7CU5wRA">
+    <contextParameter comment="" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TXESS_DEV" xmi:id="_I1fhOb4TEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="digital_dev" xmi:id="_I1fhOr4TEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta" xmi:id="_I1fhO74TEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeadmmsql01mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com" xmi:id="_I1fhPL4TEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:RApVPPgT1jAsPpLihq7U9Drc4RHLvtS52e5S9ZXqsCL0uJAyz/FI5vvzfnTcHN8=" xmi:id="_I1fhPb4TEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_I1fhPr4TEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="encrypt=true;trustServerCertificate=true;ssl=require;allowMultiQueries=true" xmi:id="_I1fhP74TEeu5nvs7CU5wRA"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Production" xmi:id="_wTS0CL3hEeu5nvs7CU5wRA">
+    <contextParameter comment="" name="TXESSServerConnection_Schema_etlmeta_Database" prompt="TXESSServerConnection_Schema_etlmeta_Database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TXESS" xmi:id="_wTS0Cb3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Login" prompt="TXESSSqlServerConnection_Schema_etlmeta_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Digital-Prod" xmi:id="_wTS0Cr3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Schema" prompt="TXESSSqlServerConnection_Schema_etlmeta_Schema?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="etlmeta" xmi:id="_wTS0C73hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Server" prompt="TXESSSqlServerConnection_Schema_etlmeta_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="uaeapmmsql02mdg.cewyltqkmt8k.us-east-1.rds.amazonaws.com" xmi:id="_wTS0DL3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Password" prompt="TXESSSqlServerConnection_Schema_etlmeta_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:pof9/Qjr6fGIEeSxPguCk/+QUssFHt3VDmwztC9KLRfpk1GWulNNnzGX/Qjw6I9J" xmi:id="_wTS0Db3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_Port" prompt="TXESSSqlServerConnection_Schema_etlmeta_Port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="1433" xmi:id="_wTS0Dr3hEeu5nvs7CU5wRA"/>
+    <contextParameter comment="" name="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams" prompt="TXESSSqlServerConnection_Schema_etlmeta_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="allowMultiQueries=true" xmi:id="_wTS0D73hEeu5nvs7CU5wRA"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_2138dfb9-ac67-4bc9-adff-084a1f490d05"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>t5BJrtbTW7j3tGeAXWrbVvwptR0WqMllt2uHp8zF7+2hvTZlbpGcC2lD0nVrVPZ1YlqCOhdZ3Y8F&#13;
+lZ4AM+gkCw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_57eb394c-1a7d-4e9b-b3d2-19721ed7982a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mGYGBEtLFjGgxUme8b3QuK31rQSsoEAS2hEKy4EGwPhnp0o3H4Y3cUFU8Xh/6H5FoEsuT1v2MIxa&#13;
+mLa/1O7HHQ==</DigestValue></Reference></SignedInfo><SignatureValue>e/3rhVI0shhIWWDEAqqB93XaQmNdY11meUrzSfG7LTV02ZcSW6/YLPETOmGJB4Lff7BhHOLlMs5O&#13;
+c/sPoIEoG9jokKlYRTw2ke+z0dLQdY5MoZ9n8TLghwSJHYqXdNduYg4rr+4NHrtmgpktDjxaqYak&#13;
+ATHiU4mwSy9wfJZx3v7MAV9QShOAvkRQ0oX5bvMbYt1VqGIDpTfdZq0hggSpEAr3MngBkMTtWpUX&#13;
+aBd3+sOGmOTNBREa5BAWOs5/QfQ6ZBeolARHqLtuPu01IJimELNJzydnKPJAhmrmSGPfi4//dt8a&#13;
+lSV5RKgVNzvcjGE+i2BxRbspXxeg1wxbae+fJQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_57eb394c-1a7d-4e9b-b3d2-19721ed7982a" Target="#_2138dfb9-ac67-4bc9-adff-084a1f490d05"><Timestamp>2023-05-05 06:56:38</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

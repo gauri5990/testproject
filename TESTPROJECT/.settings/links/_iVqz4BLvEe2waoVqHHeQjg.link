@@ -1,0 +1,25 @@
+{
+  "itemId" : "_iVqz4BLvEe2waoVqHHeQjg",
+  "contextList" : [ {
+    "contextName" : "Production",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_UrhioRLwEe2waoVqHHeQjg",
+      "name" : "Secret_EDI"
+    } ]
+  }, {
+    "contextName" : "TXESS_DEV",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_9vWM0j1XEe2GksvEOPBXdg",
+      "name" : "Secret_EDI"
+    } ]
+  }, {
+    "contextName" : "TXESS_UAT",
+    "repoId" : "_VvD9IBJJEe2EXsYzGJKemw",
+    "parameterList" : [ {
+      "id" : "_9vWM1j1XEe2GksvEOPBXdg",
+      "name" : "Secret_EDI"
+    } ]
+  } ]
+}

@@ -1,0 +1,29 @@
+{
+  "itemId" : "_-ItSYBOyEe20p6T0x2wr5g",
+  "contextList" : [ {
+    "contextName" : "Development",
+    "repoId" : "_PD5vkBOwEe20p6T0x2wr5g",
+    "parameterList" : [ {
+      "id" : "_HQBRoROyEe20p6T0x2wr5g",
+      "name" : "TEXSSDatabase"
+    }, {
+      "id" : "_HQBRohOyEe20p6T0x2wr5g",
+      "name" : "TEXSSLogin"
+    }, {
+      "id" : "_HQBRoxOyEe20p6T0x2wr5g",
+      "name" : "TEXSSServer"
+    }, {
+      "id" : "_HQBRpBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSPassword"
+    }, {
+      "id" : "_HQBRpROyEe20p6T0x2wr5g",
+      "name" : "TEXSSPort"
+    }, {
+      "id" : "_HQBRphOyEe20p6T0x2wr5g",
+      "name" : "TEXSSAdditionalParams"
+    }, {
+      "id" : "_8rbcEBOyEe20p6T0x2wr5g",
+      "name" : "TEXSSSchema"
+    } ]
+  } ]
+}
